@@ -1,0 +1,31 @@
+#sidebar {
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    color: var(--color-white);
+
+    #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2rem;
+        
+        .button {
+            background-color: var(--color-white);
+            color: black;
+            padding: .25rem .75rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}
