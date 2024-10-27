@@ -82,7 +82,7 @@ export default function Board() {
                         memoMakeMove(move);
                         console.log("Fetching next move");
                         setGameState(prev => ({...prev, whiteToMove: !prev.whiteToMove}));
-                    }, 200)
+                    }, 500)
                 }
                 else setGameState(prev => ({...prev, gameEnded: true}))
             })           
